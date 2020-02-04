@@ -862,3 +862,25 @@ Processing by SongsController#show as HTML
 Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/artists/4/songs/16" for 73.140.242.122 at 2020-02-04 17:34:08 +0000
+Cannot render console from 73.140.242.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"4", "id"=>"16"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = ? AND "songs"."id" = ? LIMIT ?[0m  [["artist_id", 4], ["id", 16], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/4/songs/24" for 73.140.242.122 at 2020-02-04 17:34:10 +0000
+Cannot render console from 73.140.242.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"4", "id"=>"24"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = ? AND "songs"."id" = ? LIMIT ?[0m  [["artist_id", 4], ["id", 24], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
